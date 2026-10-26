@@ -76,14 +76,14 @@ tauri-plugin-macos-permissions = "2"
 tauri-plugin-dialog = "2"
 tauri-plugin-opener = "2"
 hostname = "0.4"
-axuielement = "0.9"
-screencapturekit = { version = "9", features = ["macos_14_0"] }
+axuielement = "0.10"
+screencapturekit = { version = "11", features = ["macos_14_0"] }
 enigo = "0.6"
 goat-computer-host-apps = { path = "crates/goat-computer-host-apps" }
 objc2 = "0.6"
 objc2-app-kit = { version = "0.3", default-features = false, features = ["NSWorkspace", "NSRunningApplication", "libc"] }
 objc2-foundation = { version = "0.3", default-features = false, features = ["NSEnumerator"] }
-parking_lot = "0.12"
+parking_lot = "0.13"
 core-graphics = "0.25"
 
 tokio                   = { version = "1.47", features = ["full"] }
@@ -105,8 +105,8 @@ dialoguer = "0.12"
 
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-toml = "0.9"
-toml_edit = "0.23"
+toml = "1.1"
+toml_edit = "0.25"
 serde_yaml = "0.9"
 schemars = "1"
 ignore = "0.4"
@@ -114,7 +114,7 @@ regex = "1"
 tempfile = "3"
 unicode-width = "0.2"
 unicode-normalization = "0.1"
-pulldown-cmark = { version = "0.12", default-features = false }
+pulldown-cmark = { version = "0.13", default-features = false }
 syntect = { version = "5", default-features = false, features = ["default-fancy"] }
 
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
@@ -127,7 +127,7 @@ sha2 = "0.11"
 semver = "1"
 tar = "0.4"
 flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
-base64 = "0.22"
+base64 = "0.23"
 percent-encoding = "2"
 image = { version = "0.25", default-features = false, features = [
     "png",
@@ -156,7 +156,7 @@ thiserror = "2"
 tokio-rustls = { version = "0.26", default-features = false, features = ["ring"] }
 rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
 rcgen = { version = "0.14", default-features = false, features = ["ring", "pem", "x509-parser"] }
-tokio-tungstenite = { version = "0.28", features = ["rustls-tls-webpki-roots"] }
+tokio-tungstenite = { version = "0.30", features = ["rustls-tls-webpki-roots"] }
 qrcode = { version = "0.14", default-features = false }
 
 goat-types              = { path = "crates/goat-types" }
@@ -216,19 +216,19 @@ anyhow                  = "1"
 sqlx                    = { version = "0.9", default-features = false, features = ["sqlite", "runtime-tokio", "macros", "migrate", "chrono", "uuid", "json"] }
 sqlite-vec              = "0.1"
 libsqlite3-sys          = "0.37"
-zerocopy                = "0.7"
+zerocopy                = "0.8"
 chrono                  = { version = "0.4", features = ["serde"] }
 chrono-tz               = "0.10"
-cron                    = "0.15"
+cron                    = "0.17"
 uuid                    = { version = "1", features = ["v4", "v5", "v7", "serde"] }
 url                     = { version = "2", features = ["serde"] }
 walkdir                 = "2"
 globset                 = "0.4"
-vt100                   = "0.15"
+vt100                   = "0.18"
 libc                    = "0.2"
-twilight-gateway        = "0.16"
-twilight-http           = "0.16"
-twilight-model          = "0.16"
+twilight-gateway        = "0.17"
+twilight-http           = "0.17"
+twilight-model          = "0.17"
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
